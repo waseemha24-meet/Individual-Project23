@@ -5,7 +5,7 @@
   <nav class="navbar-container container">
     <a href="/" class="home-link">
       <div class="navbar-logo"></div>
-      Website Name
+      petty
     </a>
     <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
       <span class="icon-bar"></span>
@@ -35,10 +35,6 @@
         <p>{{ data.two }}</p>
 
         <img src="{{ data.photo }}" alt="{{ data.name }}">
-
-        <video width="320" height="240" controls>
-            <source src="{{ data.video }}" type="video/mp4">
-        </video>
     {% else %}
         <p>No data found for the selected pet.</p>
     {% endif %}
