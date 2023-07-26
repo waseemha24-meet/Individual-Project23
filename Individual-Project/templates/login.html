@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>log in</title>
+</head>
+<body>
+	<div class="login-box">
+	  <h2>Login</h2>
+	  <form method="POST" action="/login">
+	    <div class="user-box">
+	      <input type="text" name="email">
+	      <label>email</label>
+	    </div>
+	    <div class="user-box">
+	      <input type="password" name="password">
+	      <label>Password</label>
+	    </div>
+	    <div>
+        <input type="submit" id="sub2" value="log in"/>
+      </div>
+	  </form>
+	</div>
+
+
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #C3B091;
+    }
+
+    .login-box {
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .user-box {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .user-box input {
+      width: 100%;
+      padding: 10px 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .user-box label {
+      position: absolute;
+      top: 0;
+      left: 5px;
+      padding: 10px 5px;
+      font-size: 14px;
+      color: #666;
+      pointer-events: none;
+      transition: 0.2s ease-out;
+    }
+
+    .user-box input:focus + label,
+    .user-box input:valid + label {
+      top: -15px;
+      left: 5px;
+      background-color: #ffffff;
+      font-size: 12px;
+      padding: 2px 5px;
+      color: #704214;
+    }
+
+    .login-box #sub2 {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #7B3F00;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .login-box #sub2:hover {
+      background-color: #7B3F00;
+    }
+  </style>
+</body>
+</html>
